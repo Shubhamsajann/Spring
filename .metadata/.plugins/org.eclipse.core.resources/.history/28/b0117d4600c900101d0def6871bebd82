@@ -1,0 +1,12 @@
+package _2service;
+
+public class SpringBoot implements ICourse {
+
+	@Override
+	public Boolean getTheCourse(Double amount) {
+	System.out.println("Spring Boot COurse is Purchased" +amount);
+	return true;
+	
+	}
+
+}

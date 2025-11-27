@@ -1,0 +1,14 @@
+package Main;
+
+public class Telusk {
+	
+	private Icourse course;
+	
+	public 
+	public Boolean buyCourse(Double amount) {
+		return 
+		
+	}
+	
+
+}

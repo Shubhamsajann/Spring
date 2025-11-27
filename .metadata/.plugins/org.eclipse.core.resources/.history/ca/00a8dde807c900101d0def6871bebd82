@@ -1,0 +1,10 @@
+package Main;
+
+public class LaunchApp {
+	public static void main(String[] args) {
+		
+		Telusk t  = new Telusk();
+		t
+	}
+
+}

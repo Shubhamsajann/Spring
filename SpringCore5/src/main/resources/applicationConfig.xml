@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 
+        Example 1: Using byType autowiring (commented out)
+        <bean id="java" class="Service.java"/>
+        <bean id="sb" class="Services.SpringBoot"/>
+        <bean id="telusko" class="Main.telusko" autowire="byType"/>
+        This would automatically inject beans by their type.
+    -->
+    
+    <!-- 
+        Example 2: Using constructor autowiring (commented out)
+        <bean id="java" class="Services.Java" autowire-candidate="false"/>
+        <bean id="sb" class="Services.SpringBoot"/>
+        <bean id="telusko" class="Main.Telusko" autowire="constructor"/>
+        This would inject dependencies through the constructor of Telusko.
+    -->
+    
+    <!-- 
+        Example 3: Using byName autowiring (commented out)
+        <bean id="java" class="Services.Java" autowire-candidate="false"/>
+        <bean id="course" class="Services.SpringBoot"/>
+        <bean id="telusko" class="Main.Telusko" autowire="byName"/>
+        This would inject beans by matching bean names with property names.
+    -->
+
+    <!-- 
+        Active beans definition:
+        Here we manually inject dependencies using <property>.
+    -->
+
+    <!-- Define Java bean -->
+    <bean id="java" class="Services.Java"/>
+    
+    <!-- Define SpringBoot bean -->
+    <bean id="sb" class="Services.SpringBoot"/>
+    
+    <!-- Define Telusko bean with manual injection -->
+    <bean id="telusko" class="Main.Telusko" autowire="no">
+        <!-- Inject 'java' bean into 'course' property of Telusko -->
+        <property name="course" ref="java"/>
+    </bean>
+
+</beans>

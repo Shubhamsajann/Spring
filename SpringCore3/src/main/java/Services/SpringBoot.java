@@ -1,0 +1,14 @@
+package Services;
+
+public class SpringBoot implements ICourse {
+
+    public SpringBoot() {
+        System.out.println("SpringBoot Bean Created");
+    }
+
+    @Override
+    public Boolean getTheCourse(Double amount) {
+        System.out.println("Spring Boot course is purchased and amount paid is " + amount);
+        return true;
+    }
+}

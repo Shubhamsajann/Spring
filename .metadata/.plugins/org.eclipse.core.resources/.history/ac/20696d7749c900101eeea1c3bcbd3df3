@@ -1,0 +1,9 @@
+package com.telusko.main.web;
+
+public class WebLayer {
+	
+	public WebLayer() {
+		System.out.println("WebLayer Bean C");
+	}
+
+}

@@ -1,0 +1,23 @@
+ package com.telusko.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class LaunchApp1 {
+
+    public static void main(String[] args) {
+
+        // Load Spring XML configuration
+        ApplicationContext container = new AnnotationConfigApplicationContext(JavaConfiguration.class );
+        
+        Telusko t = container.getBean(Telusko.class);
+        Boolean b = t.buythecourse(2500.00);
+        if(b) {
+        	System.out.println("Course is Puchased");
+        }
+        else {
+        	System.out.println("Failed to purchase");
+        }
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.telusko&apos; to &apos;com.telusko.main&apos;&#x0A;- Original project: &apos;SpringCore4&apos;&#x0A;- Original element: &apos;SpringCore4/src/main/java/com.telusko&apos;&#x0A;- Renamed element: &apos;SpringCore4/src/main/java/com.telusko.main&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.telusko&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.telusko" name="com.telusko.main" qualified="false" references="true" stamp="1763996719792" textual="false" version="1.0"/>
+</session>

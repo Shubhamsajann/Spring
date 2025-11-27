@@ -1,0 +1,12 @@
+package Main;
+
+public class Java implements Icourse  {
+
+	@Override
+	public Boolean getCourse(Double amount) {
+	System.out.println("j");
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

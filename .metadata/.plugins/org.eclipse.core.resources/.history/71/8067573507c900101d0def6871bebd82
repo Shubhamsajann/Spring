@@ -1,0 +1,10 @@
+package Main;
+
+public class SpringBoot 
+public class Java implements Icourse  {
+
+	@Override
+	public Boolean getCourse(Double amount) {
+		// TODO Auto-generated method stub
+		return null;
+	}

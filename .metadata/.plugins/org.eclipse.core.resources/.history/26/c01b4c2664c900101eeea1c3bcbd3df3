@@ -1,0 +1,17 @@
+package com.telusko.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.telusko.main.service.Password; // Import the Password service class
+
+public class LaunchApp1 {
+
+    public static void main(String[] args) {
+        
+       
+        ApplicationContext container = new ClassPathXmlApplicationContext("applicationConfig.xml");
+        
+   
+    }
+}

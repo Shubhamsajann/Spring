@@ -1,0 +1,12 @@
+package Main;
+
+public class Java implements Icourse  {
+
+	@Override
+	public Boolean getCourse(Double amount) {
+		StringIndexOutOfBoundsException
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,14 @@
+package Main;
+
+public class LaunchApp {
+	public static void main(String[] args) {
+		
+		Telusk t  = new Telusk();
+		t.setCourse(new Java());
+		
+		if (t.buyCourse(55.5)) {
+			System.out.println("COuse Purchased");
+		}
+	}
+
+}

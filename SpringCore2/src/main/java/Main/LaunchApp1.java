@@ -1,0 +1,25 @@
+package Main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class LaunchApp1 {
+
+    public static void main(String[] args) {
+
+        // Load Spring XML configuration
+        ApplicationContext container = new ClassPathXmlApplicationContext("applicationConfig.xml");
+
+        // Get Telusko bean from container
+        Telusko t = container.getBean(Telusko.class);
+
+        // Call business logic
+        Boolean b = t.buythecourse(44.44);
+
+        if (b) {
+            System.out.println("Course purchased");
+        } else {
+            System.out.println("Course failed to purchase");
+        }
+    }
+}

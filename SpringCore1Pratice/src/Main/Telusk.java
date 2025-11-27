@@ -1,0 +1,22 @@
+package Main;
+
+public class Telusk {
+	
+	private Icourse course;
+	
+	
+	
+
+
+	public void setCourse(Icourse course) {
+		this.course = course;
+	}
+
+
+	public Boolean buyCourse(Double amount) {
+		return  course.getCourse(amount);
+		
+	}
+	
+
+}

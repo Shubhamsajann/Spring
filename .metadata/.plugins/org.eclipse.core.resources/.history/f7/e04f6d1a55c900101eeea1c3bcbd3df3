@@ -1,0 +1,11 @@
+package com.telusko.main.service;
+
+import org.springframework.stereotype.Service;
+
+@Service("service")
+public class ServiceLayer { //serviceLayer
+
+	public ServiceLayer() {
+		System.out.println("Service Bean created");
+	}
+}

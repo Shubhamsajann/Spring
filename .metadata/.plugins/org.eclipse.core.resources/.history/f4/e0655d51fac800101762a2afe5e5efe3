@@ -1,0 +1,5 @@
+package _2service;
+
+public interface ICourse {
+
+}

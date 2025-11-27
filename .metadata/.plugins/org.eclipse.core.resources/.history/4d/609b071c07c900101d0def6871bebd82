@@ -1,0 +1,8 @@
+package Main;
+
+public interface Icourse {
+	public Booelan getCourse(Double amount) {
+		
+	}
+
+}

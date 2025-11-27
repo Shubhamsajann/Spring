@@ -1,0 +1,9 @@
+package com.telusko.main.service;
+
+@
+public class Utility {
+	public Utility() {
+		System.out.println("Utility bean created");
+	}
+
+}

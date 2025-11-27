@@ -1,0 +1,8 @@
+package com.telusko.main;
+
+
+@C
+public class JavaConfiguration {
+	
+
+}

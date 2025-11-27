@@ -1,0 +1,17 @@
+package com.telusko.main.service;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration  // Marks this class as a configuration bean (can define @Bean methods)
+public class Config {
+
+    public Config() {
+        // Constructor prints message when config bean is created
+        System.out.println("Config Bean Created");
+    }
+    
+    public Password createPasswordBean() {
+    	ps
+    }
+
+}

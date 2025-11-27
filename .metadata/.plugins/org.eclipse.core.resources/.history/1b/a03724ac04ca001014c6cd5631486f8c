@@ -1,0 +1,16 @@
+ package com.telusko.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class LaunchApp1 {
+
+    public static void main(String[] args) {
+
+        // Load Spring XML configuration
+        ApplicationContext container = new AnnotationConfigApplicationContext(JavaConfiguration.class );
+        
+        Te
+    }
+}

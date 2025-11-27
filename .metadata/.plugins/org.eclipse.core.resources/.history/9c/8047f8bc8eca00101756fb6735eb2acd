@@ -1,0 +1,28 @@
+package com.telusko.main.config;
+
+
+import java.time.LocalDate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class Greetings {
+	
+	@Autowired
+	public LocalDate time;
+	
+	public Greetings() {
+		System.out.println("Greating Bean Created");
+	}
+	
+	public String generateGreeting(String name) {
+		int hour =time.getHour();
+		if(hour<12) {
+			return "Good Moring! "+name;
+		}
+		else if(hour <12 )
+		
+	}
+
+}

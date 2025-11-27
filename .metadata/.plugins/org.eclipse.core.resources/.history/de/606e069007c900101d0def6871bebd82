@@ -1,0 +1,10 @@
+package Main;
+
+public class Telusk {
+	
+	private Icourse course;
+	
+	
+	
+
+}

@@ -1,0 +1,39 @@
+package com.telusko.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+@Service
+public class Telusko {
+
+    // Dependency: ICourse (Java / SpringBoot)
+	
+	@Autowired
+	Q
+    private ICourse course;
+
+    // Default constructor
+    public Telusko() {
+        super();
+  
+        System.out.println("Telusko Bean is Created");
+    }
+
+    // Constructor injection
+    public Telusko(ICourse course) {
+        System.out.println("Constructor Injection");
+        this.course = course;
+    }
+
+    // Setter injection
+    public void setCourse(ICourse course) {
+    	System.out.println("Setter Injection");
+        this.course = course;
+    }
+
+    // Business logic method
+    public Boolean buythecourse(Double amount) {
+        return course.getTheCourse(amount);
+    }
+}

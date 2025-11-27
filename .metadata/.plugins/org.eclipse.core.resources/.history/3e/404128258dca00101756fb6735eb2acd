@@ -1,0 +1,15 @@
+package com.telusko.main.config;
+
+
+import java.time.LocalDate;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class Greetings {
+	public LocalDate
+	public Greetings() {
+		System.out.println("Greating Bean Created");
+	}
+
+}

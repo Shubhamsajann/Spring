@@ -1,0 +1,9 @@
+package com.telusko.main.dao;
+
+@Re
+public class Dao {
+	public Dao() {
+		System.out.println("Dao Bean Created");
+	}
+
+}
