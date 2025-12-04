@@ -17,3 +17,4 @@ public class LaunchApp1 {
       System.out.println(greet.generateGreeting("akash")); 
     }
 }
+   

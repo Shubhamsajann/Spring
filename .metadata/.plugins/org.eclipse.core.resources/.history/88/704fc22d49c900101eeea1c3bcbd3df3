@@ -1,8 +1,0 @@
-package com.telusko.main.dao;
-
-public class Dao {
-	public Dao() {
-		System.out.println("Dao Bean ");
-	}
-
-}

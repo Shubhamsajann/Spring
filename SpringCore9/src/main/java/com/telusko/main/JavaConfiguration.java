@@ -18,6 +18,6 @@ public class JavaConfiguration {
 	 @Bean
 	 public  LocalDateTime createTimeObject() {
 		 return LocalDateTime.now();
-	 }
+	 } 
 
 }
