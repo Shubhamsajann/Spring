@@ -31,6 +31,30 @@ public class VaccineServie implements IVaccineService {
 	return repo.searchByVaccineCompany(comp1, comp2);
   }
 
+  @Override
+  public List<String> fetchvaccineByCost(Double maxPrice1, Double maxPrice2) {
+	// TODO Auto-generated method stub
+	return repo.searchvaccineByCost(maxPrice2, maxPrice2);
+  }
+
+  @Override
+  public int updadteThePriceByVaccineName(Double newPrice, String vaccineName) {
+	// TODO Auto-generated method stub
+	return repo.updatePriceByVaccineName(newPrice, vaccineName);
+  }
+
+  @Override
+  public int deleteTheVaccineByvaccineName(String vaccineName) {
+
+	return repo.deleteVaccineByvaccineName(vaccineName);
+  }
+
+  @Override
+  public int insertVaccineDetails(String vaccineName, String vaccineCompany, Double cost) {
+	// TODO Auto-generated method stub
+	return repo.insertVaccineInfo(vaccineName, vaccineCompany, cost);
+  }
+
   
 
 
