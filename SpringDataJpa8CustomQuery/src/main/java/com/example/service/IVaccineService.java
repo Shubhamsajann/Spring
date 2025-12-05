@@ -1,5 +1,7 @@
 package com.example.service;
 
+import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
@@ -19,6 +21,9 @@ public List<String> fetchvaccineByCost( Double maxPrice1 , Double  maxPrice2);
 public int updadteThePriceByVaccineName(Double newPrice,String vaccineName );
 public int deleteTheVaccineByvaccineName(String vaccineName );
 public int insertVaccineDetails(String vaccineName,String vaccineCompany,Double cost );
+public LocalDateTime getSystemDateAndTime();
+
+
 
 
 

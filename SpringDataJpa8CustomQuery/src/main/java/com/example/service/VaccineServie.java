@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import com.example.entity.Vaccine;
 import com.example.repo.IVaccineRepo;
 
+import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 @Service
@@ -53,6 +55,12 @@ public class VaccineServie implements IVaccineService {
   public int insertVaccineDetails(String vaccineName, String vaccineCompany, Double cost) {
 	// TODO Auto-generated method stub
 	return repo.insertVaccineInfo(vaccineName, vaccineCompany, cost);
+  }
+
+  @Override
+  public LocalDateTime getSystemDateAndTime() {
+	// TODO Auto-generated method stub
+	return repo.getTheSystemDateAndTime();
   }
 
   

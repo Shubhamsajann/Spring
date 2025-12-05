@@ -42,15 +42,16 @@ public class SpringDataJpa1Application {
 //		}
 		 
 		 
-		 int rowAffrect= service.insertVaccineDetails("shubham", "shrusti", 100.10);
-		 int rowAffrect2= service.insertVaccineDetails("shubhamsajjan", "shrustiimdapur", 101.10);
-			
-			if(rowAffrect !=0) {
-					System.out.println("Record Inserted successful");
-			}
-			else {		System.out.println("Record Deleted  failed");
-			}
+//		 int rowAffrect= service.insertVaccineDetails("shubham", "shrusti", 100.10);
+//		 int rowAffrect2= service.insertVaccineDetails("shubhamsajjan", "shrustiimdapur", 101.10);
+//			
+//			if(rowAffrect !=0) {
+//					System.out.println("Record Inserted successful");
+//			}
+//			else {		System.out.println("Record Deleted  failed");
+//			}
 		 
+		 System.out.println(service.getSystemDateAndTime());
 		 
 	}
 

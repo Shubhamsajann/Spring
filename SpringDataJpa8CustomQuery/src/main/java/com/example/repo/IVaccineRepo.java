@@ -1,4 +1,6 @@
 package com.example.repo;
+import java.sql.Date;
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
@@ -14,6 +16,7 @@ import com.example.entity.Vaccine;
 
 public interface IVaccineRepo extends JpaRepository<Vaccine, Integer> {
 //custom
+	
 //	@Query("From Vaccine Where vaccineCompany=:company")
 //	public List<Vaccine> searchByVaccineCompany(String company);
 	
@@ -46,6 +49,7 @@ public interface IVaccineRepo extends JpaRepository<Vaccine, Integer> {
     @Query(value="insert into vaccine(vaccine_company,vaccine_name,cost) Values(?,?,?)" ,nativeQuery = true)
 	public int insertVaccineInfo(String vaccineName,String vaccineCompany,Double cost );
 	
-	
+	 @Query(value="select now()from dual" ,nativeQuery = true)
+	public LocalDateTime getTheSystemDateAndTime();
 	
 }
