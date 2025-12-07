@@ -6,6 +6,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/shubham/eclipse-new-workspace/MultiDBProject"/>
+			<item value="/Users/shubham/eclipse-new-workspace/SpringDataJPAMongoDB"/>
 			<item value="/Users/shubham/eclipse-new-workspace/SpringDataJdbc"/>
 		</list>
 		<list key="projectNameTemplate">
